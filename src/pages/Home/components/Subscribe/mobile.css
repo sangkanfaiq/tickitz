@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+  /* subscribe */
+  .content-subscribe input {
+    padding: 12px 90px 15px 0px;
+    padding-left: 24px;
+  }
+}

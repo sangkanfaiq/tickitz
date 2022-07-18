@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+  .now-showing {
+    height: auto;
+  }
+  /* .nw-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+  } */
+}

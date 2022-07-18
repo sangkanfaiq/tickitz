@@ -1,0 +1,30 @@
+@media screen and (max-width: 768px) {
+    .footer-logo {
+        margin-bottom: 30px;
+    }
+    .exp-list {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .exp-list p {
+        margin-right: 50px;
+    }
+    .spons-list {
+        display: flex;
+        align-items: center;
+        align-self: center;
+        margin-bottom: 30px;
+    }
+    .spons-list .sponsor {
+        margin-right: 15px;
+    }
+    .social-list {
+        display: flex;
+    }
+    .social-list .social a {
+        display: none;
+    }
+    .social .icon {
+        margin-right: 3em;
+    }
+}

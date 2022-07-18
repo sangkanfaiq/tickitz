@@ -1,0 +1,100 @@
+.upcoming-movies {
+  position: relative;
+  width: 100%;
+  height: 800px;
+}
+.um-title {
+  margin-top: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.um-title h2 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--secondary);
+}
+.um-title a {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.15px;
+  text-decoration: none;
+  color: var(--primary);
+}
+.month.active {
+  background: var(--primary);
+  color: #fff;
+}
+.month {
+  background: #ffffff;
+  border: 1px solid var(--primary);
+  padding: 12px 37px;
+  border-radius: 5px;
+  margin: 20px 0;
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  transition: 0.3s;
+}
+.slick-slide {
+  padding: 0 10px;
+}
+.slick-list {
+  padding: 0 -10px;
+}
+.month:hover {
+  background-color: var(--primary);
+  color: #fff;
+  cursor: pointer;
+}
+.um-card-items {
+  width: 225px;
+  height: 450px;
+  padding: 20px;
+  margin-top: 50px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #dedede;
+}
+.um-card-items img {
+  margin: auto;
+  border-radius: 10px;
+  width: 160px;
+  height: 245px;
+}
+.um-details .m-title {
+  padding-top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.15px;
+  color: #14142b;
+}
+.um-card-items .m-genre {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  color: var(--secondary);
+  margin-top: 8px;
+  height: 50px;
+}
+.um-card-items button {
+  background: #fff;
+  border-radius: 5px;
+  border: 1px solid var(--primary);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--primary);
+  padding: 8px 50px;
+  transition: 0.3s;
+}
+.um-card-items button:hover {
+  background: var(--primary);
+  color: #fff;
+}
