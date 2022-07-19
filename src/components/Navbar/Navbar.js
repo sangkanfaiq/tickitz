@@ -17,11 +17,11 @@ const Navbar = () => {
           <div className={toggle ? "nav-menu active" : "nav-menu"}>
             <div className="nav-links left"><Link to="/">Home</Link></div>
             <div className="nav-links"><Link to="/movies">List Movies</Link></div>
-            <Link to="/signup"><button className='btn-su'>Sign Up</button> </Link>
+            <Link to="/signin"><button className='btn-su'>Sign In</button> </Link>
             <p>© 2020 Tickitz. All Rights Reserved</p>
           </div>
           <div className="nav-menu">
-            <Link to="/signup"><button>Sign Up</button></Link>
+            <Link to="/signin"><button>Sign In</button></Link>
           </div>
           <div className="nav-icon" onClick={ () => setToggle(!toggle)}>
             {toggle ? <FaTimes/> : <RiMenu3Line />}

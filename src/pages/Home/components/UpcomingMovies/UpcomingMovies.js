@@ -72,7 +72,7 @@ const UpcomingMovies = () => {
         <div className="container">
           <div className="um-title">
             <h2>Upcoming Movies</h2>
-            <Link to="/">view all</Link>
+            <Link to="/movies">view all</Link>
           </div>
 
           <Slider {...settings}>

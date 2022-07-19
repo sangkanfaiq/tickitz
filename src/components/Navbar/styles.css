@@ -16,12 +16,12 @@
   display: none;
 }
 .left {
-  margin-left: -25em;
+  margin-left: -28em;
 }
 .nav-menu .nav-links {
   padding: 0 40px;
-  font-weight: 700;
-  font-size: 15px;
+  font-weight: 800;
+  font-size: 13px;
   text-transform: uppercase;
 }
 .nav-menu .nav-links a {
