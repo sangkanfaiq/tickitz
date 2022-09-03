@@ -27,17 +27,22 @@ const MovieDetails = () => {
   return (
     <>
         {isLogin ? <NavbarLogin/> : <Navbar/>}
-        {movieDetails?.map((item, index)=> {
-            return (
-                <div key={index} className='details-box'>
-                    <img src={`http://192.168.100.39:3006/uploads/${item.cover}`} alt="" />
-                    <div className="details">
-
+        <div className="container">
+            {movieDetails?.map((item, index)=> {
+                return (
+                    <div key={index} className='details-box'>
+                        <div className="details-img">
+                            <img src={`http://192.168.100.39:3006/uploads/${item.cover}`} alt="" />
+                        </div>
+                        <div className="details">
+                            <h1>{item.title}</h1>
+                            <h1>{item.genre}</h1>
+                        </div>
                     </div>
-                </div>
 
-            )
-        })}
+                )
+            })}
+        </div>
     </>
   )
 }

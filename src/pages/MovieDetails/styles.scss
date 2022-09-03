@@ -1,0 +1,23 @@
+.details-box {
+    margin-top: 3em;
+    display: flex;
+
+    .details-img {
+        border-radius: 10px;
+        padding: 15px;
+        border: 1px solid lightgray;    
+        img {
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    }
+    .details {
+        margin-left: 1em;
+        h1 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+}
