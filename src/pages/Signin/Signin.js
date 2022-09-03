@@ -57,7 +57,7 @@ const Signin = () => {
           <form onSubmit={handleLogin}>
             <label htmlFor="">Email</label>
             <br />
-            <input type="email" placeholder="Enter your email" required
+            <input type="email" name='email' placeholder="Enter your email" required
               onChange={(e) => {
                 setFormLogin((prevData) => ({
                   ...prevData,

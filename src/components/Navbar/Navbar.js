@@ -1,30 +1,30 @@
 import React, { useState } from 'react'
-import './styles.css'
-import './mobile.css'
+import './styles.scss'
 import { Link } from 'react-router-dom'
 import logo1 from '../../assets/tickitz-logo.png'
-import { FaTimes } from "react-icons/fa";
-import { RiMenu3Line }  from 'react-icons/ri'
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
   const [ toggle, setToggle ] = useState(false)
 
   return (
     <>
-      <nav className="navbar">
+      <nav className='navbar'>
         <div className="container">
-          <Link to="/" className='nav-logo'><img src={logo1} alt="tickitz" /></Link>
-          <div className={toggle ? "nav-menu active" : "nav-menu"}>
-            <div className="nav-links left"><Link to="/">Home</Link></div>
-            <div className="nav-links"><Link to="/movies">List Movies</Link></div>
-            <Link to="/signin"><button className='btn-su'>Sign In</button> </Link>
-            <p>© 2020 Tickitz. All Rights Reserved</p>
-          </div>
-          <div className="nav-menu">
-            <Link to="/signin"><button>Sign In</button></Link>
-          </div>
-          <div className="nav-icon" onClick={ () => setToggle(!toggle)}>
-            {toggle ? <FaTimes/> : <RiMenu3Line />}
+          <div className='logo'>
+            <Link to="/"><div className='imgbox'><img src={logo1} alt="logo" title="Tickitz" /></div></Link>
+            <div className={toggle ? 'navmenu active' : 'navmenu'}>
+              <div className="links">
+              <Link to="/"><div className='navlinks active'>Home</div></Link>
+              <Link to="/movies"><div className='navlinks'>List Movies</div></Link>
+              </div>
+              <div className='navbutton'>
+                <Link to="/signin"><button>Sign In</button></Link>
+              </div>
+            </div>
+            <div className="nav-icon" onClick={() => setToggle(!toggle)}>
+              {toggle ? <FaTimes /> : <FaBars />}
+            </div>
           </div>
         </div>
       </nav>

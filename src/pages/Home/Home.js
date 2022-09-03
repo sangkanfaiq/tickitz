@@ -10,6 +10,7 @@ import { GetMovies } from "../../redux/actions/Movies";
 import { useDispatch, useSelector } from "react-redux/es/exports";
 import { AuthLogout } from "../../redux/actions/Auth";
 import { useNavigate } from "react-router-dom"
+import NavbarLogin from "../../components/Navbar/NavbarLogin";
 
 const Home = () => {
   const dispatch = useDispatch()
@@ -18,7 +19,7 @@ const Home = () => {
   }, [])
 
   const navigate = useNavigate()
-  const {data, error, loading } = useSelector((state) => state.movies);
+  const {error, loading } = useSelector((state) => state.movies);
   const {isLogin} = useSelector((state) => state.auth);
   useEffect(()=> {
     if(isLogin == false) {
@@ -27,21 +28,25 @@ const Home = () => {
   },[isLogin])
 
   if(loading) {
-    return <div>loading...</div>
+    return (
+      <div className="d-flex justify-content-center align-items-center flex-column" style={{height: '100vh'}}>
+      <img src="/images/loading.svg" alt="" style={{width: '300px', height: '300px'}}/>
+      <h2 style={{marginTop: '40px'}}>Please wait...</h2>
+    </div>
+    )
   }
   if(error) {
-   return  <div>error</div>
+   return (
+      <div className="d-flex justify-content-center align-items-center flex-column" style={{height: '100vh'}}>
+        <img src="/images/noconnect.svg" alt="" style={{width: '300px', height: '300px'}}/>
+        <h2 style={{marginTop: '40px'}}>Please check your connection</h2>
+      </div>
+   )
   }
 
   return (
     <>
-    {isLogin ? (
-      <button className="btn btn-danger" onClick={()=> {
-        dispatch(AuthLogout())
-      }}>Logout</button>
-    ): ""}
-    
-      <Navbar />
+      {isLogin ? <NavbarLogin/> : <Navbar /> }
       <Banner />
       <NowShowing />
       <UpcomingMovies />

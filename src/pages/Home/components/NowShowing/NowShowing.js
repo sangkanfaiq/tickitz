@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./styles.css";
+import "./styles.scss";
 import "./mobile.css"
 import { Link } from "react-router-dom";
 import Slider from 'react-slick'
@@ -11,7 +11,7 @@ const NowShowing = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: "http://localhost:3006/api/v1/schedule",
+      url: `http://192.168.100.39:3006/api/v1/schedule`,
     }).then((res) => {
       setMovieSchedule(res.data.data);
     }).catch((err)=> {
@@ -21,11 +21,6 @@ const NowShowing = () => {
 
   const Loading = () => {
     <div>Loading...</div>
-  } 
-
-  const [ toggle, setToggle ] = useState(false)
-  const isOpen = () => {
-    setToggle(!toggle)
   }
 
   const config = {
@@ -33,8 +28,8 @@ const NowShowing = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    slidesToShow: 5,
-    slidesToScroll: 5,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 991,
@@ -73,10 +68,10 @@ const NowShowing = () => {
             {!movieSchedule.length ? (<Loading/>) : movieSchedule.map((movie, index)=> {
                 return (
                   <div className="nw-box-items" key={index}>
-                    <img src={movie.cover} alt={movie.title} title={movie.title} onClick={isOpen}/>
-                    <div className={toggle ? "nw-item-details active" : "nw-item-details"}>
+                    <img src={`http://192.168.100.39:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
+                    <div className={"nw-item-details"}>
                       <div className="movie-title">{movie.title}</div>
-                      <div className="movie-genre">{movie.categoryName}</div>
+                      <div className="movie-genre">{movie.genre}</div>
                       <button>Details</button>
                     </div>
                   </div>
