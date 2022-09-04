@@ -8,7 +8,7 @@ const PrivateRoute = ({children})=> {
     const {isLogin} = useSelector((state) => state.auth);
     useEffect(()=> {
       if(isLogin === false) {
-        navigate('/login', {replace: true})
+        navigate('/signin', {replace: true})
       }
   },[isLogin])
     return(children)

@@ -8,6 +8,7 @@ import Slider from "react-slick";
 import axios from "axios";
 import { useState } from "react";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Movies = () => {
   const {isLogin} = useSelector((state)=> state.auth)
@@ -78,15 +79,13 @@ const Movies = () => {
             <div className="month">June</div>
             <div className="month">July</div>
             <div className="month">August</div>
-          </Slider>
+        </Slider>
 
           <div className="movie-box">
             {movie?.results?.filter((item) => {
                 if (search === '') {
                   return movie?.results
-                } else if (
-                  item.title.toLowerCase().includes(search.toLowerCase())
-                ) {
+                } else if (item.title.toLowerCase().includes(search.toLowerCase())) {
                   return movie?.results
                 }
               }).map((item, index)=> {
@@ -100,7 +99,7 @@ const Movies = () => {
                     <p>{item.genre}</p>
                   </div>
                   <div className="button-details">
-                    <button>Details</button>
+                    <Link to={`/details/${item.movieID}`}><button>Details</button></Link>
                   </div>
                 </div>
               )

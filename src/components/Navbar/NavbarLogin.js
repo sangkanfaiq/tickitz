@@ -17,7 +17,7 @@ const NavbarLogin = () => {
   const dispatch = useDispatch()
   const {isLogin} = useSelector((state) => state.auth);
   useEffect(()=> {
-    if(isLogin == false) {
+    if(isLogin === false) {
       navigate('/', {replace: true})
     }
   },[isLogin])

@@ -8,7 +8,6 @@ import Subscribe from "./components/Subscribe/Subscribe";
 import { useEffect } from "react";
 import { GetMovies } from "../../redux/actions/Movies";
 import { useDispatch, useSelector } from "react-redux/es/exports";
-import { AuthLogout } from "../../redux/actions/Auth";
 import { useNavigate } from "react-router-dom"
 import NavbarLogin from "../../components/Navbar/NavbarLogin";
 
@@ -29,7 +28,7 @@ const Home = () => {
 
   if(loading) {
     return (
-      <div className="d-flex justify-content-center align-items-center flex-column" style={{height: '100vh'}}>
+      <div className="d-flex align-items-center flex-column" style={{height: '100vh'}}>
       <img src="/images/loading.svg" alt="" style={{width: '300px', height: '300px'}}/>
       <h2 style={{marginTop: '40px'}}>Please wait...</h2>
     </div>
@@ -37,9 +36,9 @@ const Home = () => {
   }
   if(error) {
    return (
-      <div className="d-flex justify-content-center align-items-center flex-column" style={{height: '100vh'}}>
+      <div className="d-flex align-items-center flex-column" style={{height: '100vh'}}>
         <img src="/images/noconnect.svg" alt="" style={{width: '300px', height: '300px'}}/>
-        <h2 style={{marginTop: '40px'}}>Please check your connection</h2>
+        <h2 style={{marginTop: '40px'}}>404 NOT FOUND!</h2>
       </div>
    )
   }

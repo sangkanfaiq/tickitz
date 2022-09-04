@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
 import NavbarLogin from '../../components/Navbar/NavbarLogin'
 import './styles.scss'
+import moment from 'moment'
 
 const MovieDetails = () => {
     const [ movieDetails, setMovieDetails ] = useState([])
@@ -36,7 +37,31 @@ const MovieDetails = () => {
                         </div>
                         <div className="details">
                             <h1>{item.title}</h1>
-                            <h1>{item.genre}</h1>
+                            <h2>{item.genre}</h2>
+                            <div className="details-card">
+                                <div className="details-info">
+                                    <h3>Release Date</h3>
+                                    <h4>{moment(item.releaseDate).format('MMM DD, YYYY')}</h4>
+                                </div>
+                                <div className="details-info">
+                                    <h3>Directed by</h3>
+                                    <h4>{item.director}</h4>
+                                </div>
+                            </div>
+                            <div className="details-card">
+                                <div className="details-info">
+                                    <h3>Duration</h3>
+                                    <h4>{item.durationHours} hours {item.durationMinute} minute</h4>
+                                </div>
+                                <div className="details-info">
+                                    <h3>Cast</h3>
+                                    <h4>{item.cast}</h4>
+                                </div>
+                            </div>
+                            <div className="synopsis">
+                                <h5>Synopsis</h5>
+                                <p>{item.description}</p>
+                            </div>
                         </div>
                     </div>
 

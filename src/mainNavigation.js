@@ -24,8 +24,8 @@ const MainNavigation = () => {
         <Route path="/details/:movieID" element={<PublicRoute><MovieDetails /></PublicRoute>} />
         <Route path="/signup" element={<PublicRoute><Signup /></PublicRoute>} />
         <Route path="/signin" element={<PublicRoute isRestricted={true}><Signin /></PublicRoute>} />
-        <Route path="/forgotpassword" element={<PrivateRoute><ForgotPassword /></PrivateRoute>} />
-        <Route path="/updatepassword" element={<PrivateRoute><UpdatePassword /></PrivateRoute>} />
+        <Route path="/forgotpassword" element={<PublicRoute><ForgotPassword /></PublicRoute>} />
+        <Route path="/updatepassword" element={<PublicRoute><UpdatePassword /></PublicRoute>} />
       </Routes>
     </BrowserRouter>
   );

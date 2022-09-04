@@ -72,7 +72,7 @@ const NowShowing = () => {
                     <div className={"nw-item-details"}>
                       <div className="movie-title">{movie.title}</div>
                       <div className="movie-genre">{movie.genre}</div>
-                      <button>Details</button>
+                      <Link to={`/details/${movie.movieID}`}><button>Details</button></Link>
                     </div>
                   </div>
                 )
