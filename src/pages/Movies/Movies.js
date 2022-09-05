@@ -92,7 +92,7 @@ const Movies = () => {
               return (
                 <div className="movie-card" key={index}>
                   <div className="movie-image">
-                    <img src={`http:/localhost:3006/uploads/${item.cover}`} alt={item.title} title={item.title}/>
+                    <img src={`http://localhost:3006/uploads/${item.cover}`} alt={item.title} title={item.title}/>
                   </div>
                   <div className="movie-details">
                     <h3>{item.title}</h3>
@@ -107,15 +107,15 @@ const Movies = () => {
           </div>
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" aria-label="Previous">
+              <Link to="/" className="page-link" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </Link>
             </li>
-            <li className="page-item"><Link className="page-link active">1</Link></li>
-            <li className="page-item"><Link className="page-link">2</Link></li>
-            <li className="page-item"><Link className="page-link">3</Link></li>
+            <li className="page-item"><Link to="/" className="page-link active">1</Link></li>
+            <li className="page-item"><Link to="/" className="page-link">2</Link></li>
+            <li className="page-item"><Link to="/" className="page-link">3</Link></li>
             <li className="page-item">
-              <Link className="page-link" aria-label="Next">
+              <Link to="/" className="page-link" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </Link>
             </li>

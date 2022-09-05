@@ -16,7 +16,7 @@ const MovieDetails = () => {
     useEffect(()=> {
         axios({
             method: 'GET',
-            url: `http://localhost/api/v1/movies/${movieID}`
+            url: `http://localhost:3006/api/v1/movies/${movieID}`
         }).then((res)=> {
             setMovieDetails(res.data.data)
         }).catch((err)=> {
