@@ -40,7 +40,7 @@ const Movies = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://192.168.100.39:3006/api/v1/movies`,
+      url: `http://localhost:3006/api/v1/movies`,
     }).then((res) => {
       setMovie(res.data.data);
     }).catch((err)=> {
@@ -92,7 +92,7 @@ const Movies = () => {
               return (
                 <div className="movie-card" key={index}>
                   <div className="movie-image">
-                    <img src={`http://192.168.100.39:3006/uploads/${item.cover}`} alt={item.title} title={item.title}/>
+                    <img src={`http:/localhost:3006/uploads/${item.cover}`} alt={item.title} title={item.title}/>
                   </div>
                   <div className="movie-details">
                     <h3>{item.title}</h3>

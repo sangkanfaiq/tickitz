@@ -10,14 +10,14 @@ const UpcomingMovies = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://192.168.100.39:3006/api/v1/movies`,
+      url: `http://localhost:3006/api/v1/movies`,
     }).then((res) => {
       setMovieSchedule(res.data.data);
     }).catch((err)=> {
       console.log(err)
     })
   }, []);
-  
+
   const settings = {
     infinite: false,
     speed: 500,

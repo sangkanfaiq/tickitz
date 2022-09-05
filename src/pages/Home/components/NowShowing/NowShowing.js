@@ -11,7 +11,7 @@ const NowShowing = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://192.168.100.39:3006/api/v1/schedule`,
+      url: `http://localhost:3006/api/v1/schedule`,
     }).then((res) => {
       setMovieSchedule(res.data.data);
     }).catch((err)=> {
