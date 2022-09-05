@@ -20,7 +20,7 @@ const NavbarLogin = () => {
     if(isLogin === false) {
       navigate('/', {replace: true})
     }
-  },[isLogin])
+  }, [isLogin, navigate])
   return (
     <nav className="navbar-login">
       <div className="container">

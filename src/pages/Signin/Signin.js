@@ -33,7 +33,7 @@ const Signin = () => {
     } else {
       navigate("/signin", { replace: true });
     }
-  }, [isLogin]);
+  }, [isLogin, navigate]);
 
   return (
     <>

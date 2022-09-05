@@ -15,7 +15,7 @@ const Home = () => {
   const dispatch = useDispatch()
   useEffect(()=> {
     dispatch(GetMovies())
-  }, [])
+  }, [dispatch])
 
   const navigation = useNavigate()
   const {error, loading } = useSelector((state) => state.movies);
@@ -24,7 +24,7 @@ const Home = () => {
     if(isLogin === false) {
       navigation('/', {replace: true})
     }
-  },[isLogin])
+  },[isLogin, navigation])
 
   if(loading) {
     return (

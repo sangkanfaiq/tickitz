@@ -10,7 +10,6 @@ import {
   UpdatePassword,
 } from "./pages";
 import MovieDetails from "./pages/MovieDetails";
-import PrivateRoute from "./route/PrivateRoute";
 import PublicRoute from "./route/PublicRoute";
 
 
