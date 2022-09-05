@@ -17,12 +17,12 @@ const Home = () => {
     dispatch(GetMovies())
   }, [])
 
-  const navigate = useNavigate()
+  const navigation = useNavigate()
   const {error, loading } = useSelector((state) => state.movies);
   const {isLogin} = useSelector((state) => state.auth);
   useEffect(()=> {
-    if(isLogin == false) {
-      navigate('/', {replace: true})
+    if(isLogin === false) {
+      navigation('/', {replace: true})
     }
   },[isLogin])
 
