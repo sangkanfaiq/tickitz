@@ -68,7 +68,7 @@ const NowShowing = () => {
             {!movieSchedule.length ? (<Loading/>) : movieSchedule.map((movie, index)=> {
                 return (
                   <div className="nw-box-items" key={index}>
-                    <img src={`http://192.168.100.39:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
+                    <img src={`http://localhost:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
                     <div className={"nw-item-details"}>
                       <div className="movie-title">{movie.title}</div>
                       <div className="movie-genre">{movie.genre}</div>

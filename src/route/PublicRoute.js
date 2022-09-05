@@ -8,7 +8,6 @@ const PublicRoute = ({children, isRestricted=false})=> {
     const {isLogin} = useSelector((state) => state.auth);
     useEffect(()=> {
         if(isRestricted) {
-            console.log(isLogin, 'cek data dari redux')
             if(isLogin === true) {
               navigate('/', {replace: true})
             }

@@ -91,7 +91,7 @@ const UpcomingMovies = () => {
             {movieSchedule?.results?.map((movie, index)=> {
               return (
                 <div className="um-card-items" key={index}>
-                  <img src={`http://192.168.100.39:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
+                  <img src={`http://localhost:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
                   <div className="um-details">
                     <div className="m-title">{movie.title}</div>
                     <div className="m-genre">{movie.genre}</div>

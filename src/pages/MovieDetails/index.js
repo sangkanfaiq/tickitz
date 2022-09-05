@@ -33,7 +33,7 @@ const MovieDetails = () => {
                 return (
                     <div key={index} className='details-box'>
                         <div className="details-img">
-                            <img src={`http://192.168.100.39:3006/uploads/${item.cover}`} alt="" />
+                            <img src={`http://localhost:3006/uploads/${item.cover}`} alt="" />
                         </div>
                         <div className="details">
                             <h1>{item.title}</h1>
@@ -64,7 +64,6 @@ const MovieDetails = () => {
                             </div>
                         </div>
                     </div>
-
                 )
             })}
         </div>

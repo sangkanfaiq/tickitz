@@ -55,7 +55,7 @@ const Movies = () => {
         <div className="header">
           <h2>List Movies</h2>
           <div className="header-content d-flex justify-content-between">
-            <select class="form-select form-select-sm sort-movie">
+            <select className="form-select form-select-sm sort-movie">
               <option selected>Sort</option>
               <option value="1">ASC</option>
               <option value="2">DESC</option>
@@ -105,17 +105,17 @@ const Movies = () => {
               )
             })}
           </div>
-          <ul class="pagination">
-            <li class="page-item">
-              <Link class="page-link" aria-label="Previous">
+          <ul className="pagination">
+            <li className="page-item">
+              <Link className="page-link" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
               </Link>
             </li>
-            <li class="page-item"><Link class="page-link active">1</Link></li>
-            <li class="page-item"><Link class="page-link">2</Link></li>
-            <li class="page-item"><Link class="page-link">3</Link></li>
-            <li class="page-item">
-              <Link class="page-link" aria-label="Next">
+            <li className="page-item"><Link className="page-link active">1</Link></li>
+            <li className="page-item"><Link className="page-link">2</Link></li>
+            <li className="page-item"><Link className="page-link">3</Link></li>
+            <li className="page-item">
+              <Link className="page-link" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
               </Link>
             </li>
