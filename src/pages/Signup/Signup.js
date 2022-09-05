@@ -34,7 +34,7 @@ const Signup = () => {
   useEffect(() => {
     if (isRegister === true) {
       alert("Register success");
-      navigate("/", { replace: true });
+      navigate("/signin", { replace: true });
     } else {
       navigate("/signup", { replace: true });
     }
