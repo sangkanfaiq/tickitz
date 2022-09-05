@@ -38,7 +38,7 @@ const Signup = () => {
     } else {
       navigate("/signup", { replace: true });
     }
-  }, [isRegister]);
+  }, [isRegister, navigate]);
 
   return (
     <>

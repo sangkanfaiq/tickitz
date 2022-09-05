@@ -107,17 +107,17 @@ const Movies = () => {
           </div>
           <ul class="pagination">
             <li class="page-item">
-              <a class="page-link" aria-label="Previous">
+              <Link class="page-link" aria-label="Previous">
                 <span aria-hidden="true">&laquo;</span>
-              </a>
+              </Link>
             </li>
-            <li class="page-item"><a class="page-link active">1</a></li>
-            <li class="page-item"><a class="page-link">2</a></li>
-            <li class="page-item"><a class="page-link">3</a></li>
+            <li class="page-item"><Link class="page-link active">1</Link></li>
+            <li class="page-item"><Link class="page-link">2</Link></li>
+            <li class="page-item"><Link class="page-link">3</Link></li>
             <li class="page-item">
-              <a class="page-link" aria-label="Next">
+              <Link class="page-link" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
-              </a>
+              </Link>
             </li>
           </ul>
       </div>

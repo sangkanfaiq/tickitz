@@ -13,7 +13,7 @@ const PublicRoute = ({children, isRestricted=false})=> {
               navigate('/', {replace: true})
             }
         }
-  },[isLogin])
+  },[isLogin, isRestricted, navigate])
     return(children)
 }
 
