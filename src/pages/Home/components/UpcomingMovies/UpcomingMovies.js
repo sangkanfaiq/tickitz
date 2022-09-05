@@ -17,10 +17,7 @@ const UpcomingMovies = () => {
       console.log(err)
     })
   }, []);
-
-  const Loading = () => {
-    <div>Loading...</div>
-  }
+  
   const settings = {
     infinite: false,
     speed: 500,

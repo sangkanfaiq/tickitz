@@ -12,7 +12,7 @@ import moment from 'moment'
 const MovieDetails = () => {
     const [ movieDetails, setMovieDetails ] = useState([])
     const { isLogin } = useSelector((state)=> state.auth)
-    console.log(movieDetails, 'wokweok')
+
     useEffect(()=> {
         axios({
             method: 'GET',
@@ -22,9 +22,9 @@ const MovieDetails = () => {
         }).catch((err)=> {
             console.log(err)
         })
-    }, [])
+    })
 
-    const {movieID:movieID} = useParams()
+    const {movieID} = useParams()
   return (
     <>
         {isLogin ? <NavbarLogin/> : <Navbar/>}
