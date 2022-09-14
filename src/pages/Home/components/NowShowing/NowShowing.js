@@ -7,11 +7,12 @@ import Slider from 'react-slick'
 
 const NowShowing = () => {
   const [movieSchedule, setMovieSchedule] = useState([])
+  console.log(movieSchedule.results, 'awoekowake')
 
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:3006/api/v1/schedule`,
+      url: `https://tickitz-backend-1st.herokuapp.com/api/v1/schedule`,
     }).then((res) => {
       setMovieSchedule(res.data.data);
     }).catch((err)=> {
@@ -28,8 +29,8 @@ const NowShowing = () => {
     infinite: true,
     speed: 500,
     autoplay: true,
-    slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToShow: 5,
+    slidesToScroll: 5,
     responsive: [
       {
         breakpoint: 991,
@@ -65,10 +66,10 @@ const NowShowing = () => {
           </div>
             
           <Slider {...config}>
-            {!movieSchedule.length ? (<Loading/>) : movieSchedule.map((movie, index)=> {
+            {!movieSchedule?.length ? (<Loading/>) : movieSchedule?.map((movie, index)=> {
                 return (
                   <div className="nw-box-items" key={index}>
-                    <img src={`http://localhost:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
+                    <img src={`https://tickitz-backend-1st.herokuapp.com/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
                     <div className={"nw-item-details"}>
                       <div className="movie-title">{movie.title}</div>
                       <div className="movie-genre">{movie.genre}</div>

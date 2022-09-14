@@ -16,7 +16,7 @@ const MovieDetails = () => {
     useEffect(()=> {
         axios({
             method: 'GET',
-            url: `http://localhost:3006/api/v1/movies/${movieID}`
+            url: `https://tickitz-backend-1st.herokuapp.com/api/v1/movies/${movieID}`
         }).then((res)=> {
             setMovieDetails(res.data.data)
         }).catch((err)=> {
@@ -33,7 +33,7 @@ const MovieDetails = () => {
                 return (
                     <div key={index} className='details-box'>
                         <div className="details-img">
-                            <img src={`http://localhost:3006/uploads/${item.cover}`} alt="" />
+                            <img src={`https://tickitz-backend-1st.herokuapp.com/uploads/${item.cover}`} alt="" />
                         </div>
                         <div className="details">
                             <h1>{item.title}</h1>

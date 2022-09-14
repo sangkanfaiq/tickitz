@@ -29,6 +29,7 @@ const Signin = () => {
   
   useEffect(() => {
     if (isLogin === true) {
+      alert('Login Success')
       navigate("/", { replace: true }); //kita menghapus routing login dari browser
     } else {
       navigate("/signin", { replace: true });

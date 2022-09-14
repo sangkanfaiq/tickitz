@@ -10,7 +10,7 @@ const UpcomingMovies = () => {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:3006/api/v1/movies`,
+      url: `https://tickitz-backend-1st.herokuapp.com/api/v1/movies`,
     }).then((res) => {
       setMovieSchedule(res.data.data);
     }).catch((err)=> {
@@ -91,7 +91,7 @@ const UpcomingMovies = () => {
             {movieSchedule?.results?.map((movie, index)=> {
               return (
                 <div className="um-card-items" key={index}>
-                  <img src={`http://localhost:3006/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
+                  <img src={`https://tickitz-backend-1st.herokuapp.com/uploads/${movie.cover}`} alt={movie.title} title={movie.title}/>
                   <div className="um-details">
                     <div className="m-title">{movie.title}</div>
                     <div className="m-genre">{movie.genre}</div>

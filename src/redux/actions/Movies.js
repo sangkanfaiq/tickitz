@@ -25,7 +25,7 @@ export const GetMovies = () => {
     dispatch(GetMoviesRequest());
     axios({
       method: "GET",
-      url: "http://localhost:3006/api/v1/movies/",
+      url: "https://tickitz-backend-1st.herokuapp.com/api/v1/movies/",
     })
       .then((res) => {
         dispatch(GetMoviesSuccess(res.data));

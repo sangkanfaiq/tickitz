@@ -38,7 +38,7 @@ const Home = () => {
    return (
       <div className="d-flex align-items-center flex-column" style={{height: '100vh'}}>
         <img src="/images/noconnect.svg" alt="" style={{width: '300px', height: '300px'}}/>
-        <h2 style={{marginTop: '40px'}}>404 NOT FOUND!</h2>
+        <h2 style={{marginTop: '40px'}}>Can't connect to server</h2>
       </div>
    )
   }
