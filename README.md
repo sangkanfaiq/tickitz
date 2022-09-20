@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# Tickitz
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<ol>
+    <li>
+      <a href="#about-the-project">About The Project</a>
+      <ul>
+        <li><a href="#feature">Feature</a></li>
+        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#author">Author</a></li>
+        <li><a href="#related-project">Related Project</a></li>
+      </ul>
+    </li>
+    <li><a href="#demo">Demo</a>
+       <ul>
+        <li><a href="#screenshoot">Screenshoot</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+</ol>
 
-## Available Scripts
+## About The Project
+Tickitz is a website for booking cinema made with [React JS](https://reactjs.org/docs/getting-started.html)
 
-In the project directory, you can run:
+### Feature
+- Get All Movies
+- Get Movie Details
+- Authentication (Login/Register)
 
-### `npm start`
+### Built with
+- [React JS](https://reactjs.org/docs/getting-started.html)
+- [React Slick Carousel](https://react-slick.neostack.com/)
+- [moment js](https://momentjs.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/docs/5.2/getting-started/download/)
+- [SASS](https://sass-lang.com/)
+- [Redux](https://redux.js.org/introduction/getting-started)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Author
+[Sangkan Faiq](https://github.com/sangkanfaiq)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Related Project
+- [Tickitz Backend](https://github.com/sangkanfaiq/tickitz-backend)
+- [Tickitz Admin](https://github.com/sangkanfaiq/tickitz-admin)
 
-### `npm test`
+## Demo
+- Testing for authentication</br></br>
+email : admin</br>
+password : admin
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- URL link website [Click here](https://tickitzbookingsite.netlify.app/)
 
-### `npm run build`
+### Screenshoot
+| Name | Desktop | Mobile |
+| ------------- | ------------- | ------------- |
+| Homepage | <a href="https://drive.google.com/uc?export=view&id=1XEHtoSVZ5zUzakctAFKbUYSiR1tHCXDa"><img src="https://drive.google.com/uc?export=view&id=1XEHtoSVZ5zUzakctAFKbUYSiR1tHCXDa" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1V-VevmTX0OrT96NVRFE3pFYtM8Yh34F-"><img src="https://drive.google.com/uc?export=view&id=1V-VevmTX0OrT96NVRFE3pFYtM8Yh34F-" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
+| List Movies | <a href="https://drive.google.com/uc?export=view&id=12uRAbQ8_03FV1BsfD2_ZKdpWA12f4TxM"><img src="https://drive.google.com/uc?export=view&id=12uRAbQ8_03FV1BsfD2_ZKdpWA12f4TxM" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1IqLHknDDRHKhOrbIiCR3csRURgn03p8S"><img src="https://drive.google.com/uc?export=view&id=1IqLHknDDRHKhOrbIiCR3csRURgn03p8S" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
+| Movie Details | <a href="https://drive.google.com/uc?export=view&id=1y1YZpnqZ-wMXGoT92gHXMoGC-sLH15cF"><img src="https://drive.google.com/uc?export=view&id=1y1YZpnqZ-wMXGoT92gHXMoGC-sLH15cF" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | - |
+| Login | <a href="https://drive.google.com/uc?export=view&id=1IkjiulzdVSAfCuy6qJfOA4MOUpYCI7fc"><img src="https://drive.google.com/uc?export=view&id=1IkjiulzdVSAfCuy6qJfOA4MOUpYCI7fc" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1LxyxQjiNM69roEE3ZiOJmc-avFhnsgnD"><img src="https://drive.google.com/uc?export=view&id=1LxyxQjiNM69roEE3ZiOJmc-avFhnsgnD" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
+| Register | <a href="https://drive.google.com/uc?export=view&id=1uiH4YzfhpmWtK7wJLZxjyOArDqiznJjC"><img src="https://drive.google.com/uc?export=view&id=1uiH4YzfhpmWtK7wJLZxjyOArDqiznJjC" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1dvRKiKwHXkgrUL0G5JYjAtJ9tKo9kRx-"><img src="https://drive.google.com/uc?export=view&id=1dvRKiKwHXkgrUL0G5JYjAtJ9tKo9kRx-" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
+| Forgot Password | <a href="https://drive.google.com/uc?export=view&id=1lgOHwOWXfTo1xy30mjMQwuK0xLoivsgU"><img src="https://drive.google.com/uc?export=view&id=1lgOHwOWXfTo1xy30mjMQwuK0xLoivsgU" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1LxyxQjiNM69roEE3ZiOJmc-avFhnsgnD"><img src="https://drive.google.com/uc?export=view&id=1LxyxQjiNM69roEE3ZiOJmc-avFhnsgnD" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
+| Reset Password | <a href="https://drive.google.com/uc?export=view&id=1ulgOr8sU2odTrsQ4ZnP-ql5pIRI-icKO"><img src="https://drive.google.com/uc?export=view&id=1ulgOr8sU2odTrsQ4ZnP-ql5pIRI-icKO" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> | <a href="https://drive.google.com/uc?export=view&id=1QPCkb6NYR8daOxG1dkvm-vkrHGWO7uMf"><img src="https://drive.google.com/uc?export=view&id=1QPCkb6NYR8daOxG1dkvm-vkrHGWO7uMf" style="width: 350px; max-width: 100%; height: auto" title="Click to enlarge picture" /> |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
+Get started with this project, instructions on setting up your project locally.<br />
+To get a local copy up and running follow these simple steps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Prerequisites
+Before installing, you must be install [NodeJS](https://nodejs.org) and [yarn](https://yarnpkg.com/getting-started/install)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Clone this repo
+```sh
+git clone https://github.com/sangkanfaiq/tickitz
+```
+2. Install node_modules
+```sh
+yarn install
+```
+3. Install react js
+```sh
+npx create-react-app --yourprojectname
+```
+4. Install SASS
+```sh
+yarn add sass
+```
+5. Install react slick carousel
+```sh
+yarn add react-slick slick carousel
+```
+6. Install redux
+```sh
+yarn add redux
+```
+7. Start the project
+```sh
+yarn start
+```
