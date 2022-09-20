@@ -8,6 +8,7 @@ import Navbar from '../../components/Navbar/Navbar'
 import NavbarLogin from '../../components/Navbar/NavbarLogin'
 import './styles.scss'
 import moment from 'moment'
+import Footer from '../../components/Footer/Footer'
 
 const MovieDetails = () => {
     const [ movieDetails, setMovieDetails ] = useState([])
@@ -66,6 +67,7 @@ const MovieDetails = () => {
                     </div>
                 )
             })}
+            <Footer />
         </div>
     </>
   )
