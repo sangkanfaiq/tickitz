@@ -92,7 +92,7 @@ yarn add sass
 ```
 5. Install react slick carousel
 ```sh
-yarn add react-slick slick carousel
+yarn add react-slick slick-carousel
 ```
 6. Install redux
 ```sh
